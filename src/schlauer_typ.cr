@@ -4,6 +4,7 @@ require "xml"
 require "logger"
 require "./message_generator"
 require "./resources"
+require "./telegram_bot"
 require "kemal"
 
 module SchlauerTyp
@@ -45,6 +46,7 @@ module SchlauerTyp
   end
 
   generator = MessageGenerator.new
+  telegram_bot = TelegramBot.new(generator)
 
   get "/" do |context|
     context.redirect(generator.generate_path)
@@ -81,6 +83,11 @@ module SchlauerTyp
     context.response.content_type = "text/css"
     set_cache_header(context.response)
     ECR.embed("./resources/styles.css.ecr", context.response)
+    nil
+  end
+
+  post "/telegram/:token" do |context|
+    telegram_bot.handle_update(context)
     nil
   end
 
