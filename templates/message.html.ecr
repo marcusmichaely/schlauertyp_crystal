@@ -4,10 +4,16 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<title>Schlauer Typ</title>
 		<meta property="og:title" content="Schlauer Typ" />
-		<meta property="og:site_name" content="Schlauer Typ"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="<%= url %>" />
+		<meta property="og:image" content="<%= static_path("logo.svg") %>" />
 		<meta property="og:description" content="<%= message %>" />
+		<link rel="stylesheet" type="text/css" href="<%= static_path("styles.css") %>" />
 	</head>
+
 	<body>
+		<a href="<%= BASE_PATH %>" class="logo">Reload</a>
 		<h3><%= message %></h3>
+		<a class="tweet" target="_blank" href="https://twitter.com/intent/tweet?text=<%= URI.escape("Schlauer Typ! #{url}") %>">Tweet!</a>
 	</body>
 </html>

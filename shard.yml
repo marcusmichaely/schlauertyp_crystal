@@ -8,6 +8,10 @@ authors:
 description: |
   Digital version of "Der Moral-o-mat"
 
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
 targets:
   schlauer_typ:
     main: src/schlauer_typ.cr
