@@ -11,8 +11,10 @@ module SchlauerTyp
 
   def self.render_json(message, io)
     json_builder = JSON::Builder.new(io)
-    json_builder.object do
-      json_builder.field("message", message)
+    json_builder.document do
+      json_builder.object do
+        json_builder.field("message", message)
+      end
     end
   end
 
