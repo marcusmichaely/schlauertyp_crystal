@@ -11,3 +11,5 @@ description: |
 targets:
   schlauer_typ:
     main: src/schlauer_typ.cr
+  benchmark:
+    main: src/benchmark.cr
