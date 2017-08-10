@@ -1,0 +1,13 @@
+name: schlauertyp
+version: 0.1.0
+
+authors:
+  - Marcus Michaely <me@marcusmichaely.com>
+  - Joakim Reinert <mail@jreinert.com>
+
+description: |
+  Digital version of "Der Moral-o-mat"
+
+targets:
+  schlauer_typ:
+    main: src/schlauer_typ.cr

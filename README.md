@@ -1,6 +1,25 @@
-# schlauertyp
-This little script is inspired by a birthdaypresent from my friends Valentin and Insa.
+# schlauer_typ
 
-[Der Moral-o-mat](https://de-de.facebook.com/sinnfragenkombinator/)
-is so funny that i needed a digital version :)
-![](https://github.com/marcusmichaely/schlauertyp/blob/master/screenshot.png)
+This is a fork from [marcusmichaely/schlauertyp](https://github.com/marcusmichaely/schlauertyp)
+
+Unlike the original ruby implementation this version is written in crystal and
+as such compiles into a binary.  This version acts as a server backend capable
+of rendering plain text, json, xml and html.
+
+A lot of effort has been put into ensuring best possible performance which is
+-- needless to say -- impeccable for a program this sophisticated.  Although
+the strings used here stored in yaml files for easy editing they
+are embedded in the binary during compile time for super-fast response times.
+
+## Installation
+
+`shards build [--release]`
+
+## Usage
+
+`bin/schlauer_typ [<host>:<port>]`
+
+## Credits
+
+All Credits to [marcusmichaely](https://github.com/marcusmichaely) for the
+awesome Idea.
