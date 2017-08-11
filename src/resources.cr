@@ -5,6 +5,7 @@ module SchlauerTyp
 
     LOGOS = {} of String => String
     FAVICONS = {} of String => String
+    JS = {{ run("./resource_helpers/load_resource", "app.js") }}
 
     {% for format in %w(png svg) %}
       {% LOGOS["logo.#{format.id}"] = run("./resource_helpers/load_resource", "logo.#{format.id}") %}
