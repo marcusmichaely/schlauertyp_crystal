@@ -46,7 +46,9 @@ module SchlauerTyp
   end
 
   generator = MessageGenerator.new
-  telegram_bot = TelegramBot.new(generator)
+  {% unless env("WITHOUT_TELEGRAM_BOT") %}
+    telegram_bot = TelegramBot.new(generator)
+  {% end %}
 
   get "/" do |context|
     context.redirect(generator.generate_path)
@@ -86,10 +88,12 @@ module SchlauerTyp
     nil
   end
 
-  post "/telegram/:token" do |context|
-    telegram_bot.handle_update(context)
-    nil
-  end
+  {% unless env("WITHOUT_TELEGRAM_BOT") %}
+    post "/telegram/:token" do |context|
+      telegram_bot.handle_update(context)
+      nil
+    end
+  {% end %}
 
   {% for resource in [Resources::LOGOS, Resources::FAVICONS] %}
     {% for file, content in resource %}
