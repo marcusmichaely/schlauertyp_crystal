@@ -45,5 +45,5 @@ then running `bin/benchmark`!
 
 ## Credits
 
-All Credits to [marcusmichaely](https://github.com/marcusmichaely) for the
-awesome Idea.
+- [marcusmichaely](https://github.com/marcusmichaely) for the awesome Idea.
+- [dsiw](https://github.com/dsiw) for assets
