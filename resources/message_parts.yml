@@ -1,156 +1,312 @@
 ---
 start:
-  - Mut ist
-  - Leichtsinn ist
-  - Verantwortung ist
-  - Demokratie ist
-  - Geld ist
-  - Liebe ist
-  - Betrug ist
-  - Freiheit ist
-  - Denken ist
-  - Selbstlosigkeit ist
-  - Egoismus ist
-  - Moral ist
-  - Glück ist
-  - Konsum ist
-  - Das Schicksal ist
-  - Das Leben ist
-  - Unabhängigkeit ist
-  - Gerechtigkeit ist
-  - Der Tod ist
-  - Umweltschutz ist
-  - Das Fernsehen ist
-  - Ein Seitensprung ist
-  - Gewalt ist
-  - Der Sinn des Lebens ist
-  - Leistung ist
-  - Hass ist
-  - Eifersucht ist
-  - Die Kunst ist
-  - Religion ist
-  - Die Jugend ist
-  - Hoffnung ist
-  - Frieden ist
-  - Ehe ist
-  - Alles ist
-  - Freundschaft ist
-  - Armut ist
-  - Emanzipation ist
-  - Eine Diät ist
-  - Angst ist
-  - Ungerechtigkeit ist
-  - Rassismus ist
-  - Humor ist
-  - Deutscher Rap ist
-  - Die Lügenpresse ist
-  - Fortpflanzung ist
-  - Schwiegereltern sind
-  - Der Sittenverfall ist
-  - Unser Schulsystem ist
-  - Die Gentrifizierung ist
-  - Ein letztes Bier ist
+  de:
+    - Mut ist
+    - Leichtsinn ist
+    - Verantwortung ist
+    - Demokratie ist
+    - Geld ist
+    - Liebe ist
+    - Betrug ist
+    - Freiheit ist
+    - Denken ist
+    - Selbstlosigkeit ist
+    - Egoismus ist
+    - Moral ist
+    - Glück ist
+    - Konsum ist
+    - Das Schicksal ist
+    - Das Leben ist
+    - Unabhängigkeit ist
+    - Gerechtigkeit ist
+    - Der Tod ist
+    - Umweltschutz ist
+    - Das Fernsehen ist
+    - Ein Seitensprung ist
+    - Gewalt ist
+    - Der Sinn des Lebens ist
+    - Leistung ist
+    - Hass ist
+    - Eifersucht ist
+    - Die Kunst ist
+    - Religion ist
+    - Die Jugend ist
+    - Hoffnung ist
+    - Frieden ist
+    - Ehe ist
+    - Alles ist
+    - Freundschaft ist
+    - Armut ist
+    - Emanzipation ist
+    - Eine Diät ist
+    - Angst ist
+    - Ungerechtigkeit ist
+    - Rassismus ist
+    - Humor ist
+    - Deutscher Rap ist
+    - Die Lügenpresse ist
+    - Fortpflanzung ist
+    - Schwiegereltern sind
+    - Der Sittenverfall ist
+    - Unser Schulsystem ist
+    - Die Gentrifizierung ist
+    - Ein letztes Bier ist
+  en:
+    - Courage is
+    - Foolishness is
+    - Responsibility is
+    - Democracy is
+    - Money is
+    - Love is
+    - Betrayal is
+    - Freedom is
+    - Thinking is
+    - Selflessness is
+    - Egoism is
+    - Morality is
+    - Luck is
+    - Consumption is
+    - Destiny is
+    - Life is
+    - Independence is
+    - Justice is
+    - Death is
+    - Environmentalism is
+    - Watching television is
+    - Adultery is
+    - Violence is
+    - The meaning of life is
+    - Performance is
+    - Hate is
+    - Jealousy is
+    - Art is
+    - Religion is
+    - The youth is
+    - Hope is
+    - Peace is
+    - Marriage is
+    - Everything is
+    - Friendship is
+    - Poverty is
+    - Emancipation is
+    - A diet is
+    - Fear is
+    - Injustice is
+    - Racism is
+    - Humor is
+    - German rap music is
+    - Fake news is
+    - Reproduction is
+    - Parents-in-law are
+    - Demoralization is
+    - Our educational system is
+    - Gentrification is
+    - A last beer is
 
 middle:
-  - letztlich
-  - sozusagen
-  - am Ende des Tages
-  - quasi
-  - genaugenommen
-  - wirklich
-  - leider
-  - zum Glück
-  - durch die Blume gesagt
-  - rückblickend
-  - voraussichtlich
-  - unter Umständen
-  - erwiesenermaßen
-  - gelinde gesagt
-  - steng genommen
-  - unterm Strich
-  - in gewisser Hinsicht
-  - für viele gerade einmal
-  - unleugbar
-  - von Rechts wegen
-  - primär
-  - irgendwie
-  - sicherlich
-  - von außen betrachtet
-  - schon lange nicht mehr
-  - heutzutage
-  - tatsächlich
-  - in Wahrheit
-  - in Zukunft
-  - bei aller Liebe
-  - praktisch
-  - allenfalls
-  - stückweise
-  - schließlich
-  - an und für sich
-  - bei Lichte besehen
-  - unwiderleglich
-  - mitnichten
-  - vor allem
-  - auch für Hartgesottene
-  - traurigerweise
-  - für besorgte Bürger
-  - wie man hört
-  - in diesem Sinne
-  - unter Drogeneinfluss
-  - menschlich gesehen
-  - theoretisch
-  - für unsereins
-  - ganz objektiv
-  - in anderen Kulturkreisen
+  de:
+    - letztlich
+    - sozusagen
+    - am Ende des Tages
+    - quasi
+    - genaugenommen
+    - wirklich
+    - leider
+    - zum Glück
+    - durch die Blume gesagt
+    - rückblickend
+    - voraussichtlich
+    - unter Umständen
+    - erwiesenermaßen
+    - gelinde gesagt
+    - streng genommen
+    - unterm Strich
+    - in gewisser Hinsicht
+    - für viele gerade einmal
+    - unleugbar
+    - von Rechts wegen
+    - primär
+    - irgendwie
+    - sicherlich
+    - von außen betrachtet
+    - schon lange nicht mehr
+    - heutzutage
+    - tatsächlich
+    - in Wahrheit
+    - in Zukunft
+    - bei aller Liebe
+    - praktisch
+    - allenfalls
+    - stückweise
+    - schließlich
+    - an und für sich
+    - bei Lichte besehen
+    - unwiderleglich
+    - mitnichten
+    - vor allem
+    - auch für Hartgesottene
+    - traurigerweise
+    - für besorgte Bürger
+    - wie man hört
+    - in diesem Sinne
+    - unter Drogeneinfluss
+    - menschlich gesehen
+    - theoretisch
+    - für unsereins
+    - ganz objektiv
+    - in anderen Kulturkreisen
+  en:
+    - ultimately
+    - in a manner of speaking
+    - at the end of the day
+    - kind of
+    - strictly speaking
+    - really
+    - unfortunately
+    - luckily
+    - in a roundabout way
+    - in retrospective
+    - likely
+    - possibly
+    - as has been proved
+    - to say the least
+    - actually
+    - at the bottom line
+    - in a sense
+    - for many barely
+    - undeniably
+    - in fairness
+    - primarily
+    - somehow
+    - surely
+    - when viewed from the outside
+    - no longer
+    - nowadays
+    - as a matter of fact
+    - in truth
+    - in the future
+    - with all due respect
+    - virtually
+    - at best
+    - piece by piece
+    - finally
+    - technically
+    - in the cold light of day
+    - irrefutably
+    - by no means
+    - especially
+    - also for hard-boiled people
+    - sadly
+    - for concerned citizens
+    - by all accounts
+    - in this spirit
+    - under the influence of drugs
+    - when viewed humanely
+    - theoretically
+    - for us
+    - completly objectively
+    - in other culture groups
 
 end:
-  - die höchste Tugend
-  - die Basis des Zusammenlebens
-  - eine gesellschaftliche Pflicht
-  - der Anfang alles Übels
-  - das, wofür es sich zu leben lohnt
-  - falsch
-  - zutiefst menschlich
-  - kein Kavaliersdelikt mehr
-  - völlig überschätzt
-  - völlig unterschätzt
-  - immer Gabe und Aufgabe zugleich
-  - mit Vorsicht zu genießen
-  - fragwürdig
-  - existenzgefährdend
-  - der Schlüssel zum Glück
-  - eine Frage des Anstands
-  - jedem selbst überlassen
-  - geil
-  - völlig willkürlich
-  - immer schon vorherbestimmt
-  - alles was wir haben
-  - ein großes Privileg
-  - nicht mehr haltbar
-  - unsere Rettung
-  - eine Katastrophe
-  - der Anfang vom Ende
-  - noch das geringste Übel
-  - nicht grundfalsch
-  - eine Illusion
-  - unterstes Niveau
-  - ein Geschenk Gottes
-  - bedeutungslos
-  - völlig überholt
-  - doch nur relativ
-  - nur die Spitze des Eisbergs
-  - eine große Enttäuschung
-  - erst der Anfang
-  - völlig unabdingbar
-  - echt daneben
-  - eine große Chance
-  - der erste Schritt zur Besserung
-  - das Ziel allen Strebens
-  - eine Frage des richtigen Tons
-  - alles, was uns bleibt
-  - eine Schwäche
-  - schlimmer als der Tod
-  - ein fataler Fehler
-  - besser als Sex
-  - mein Trost und Halt
-  - nichts wert
+  de:
+    - die höchste Tugend
+    - die Basis des Zusammenlebens
+    - eine gesellschaftliche Pflicht
+    - der Anfang alles Übels
+    - das, wofür es sich zu leben lohnt
+    - falsch
+    - zutiefst menschlich
+    - kein Kavaliersdelikt mehr
+    - völlig überschätzt
+    - völlig unterschätzt
+    - immer Gabe und Aufgabe zugleich
+    - mit Vorsicht zu genießen
+    - fragwürdig
+    - existenzgefährdend
+    - der Schlüssel zum Glück
+    - eine Frage des Anstands
+    - jedem selbst überlassen
+    - geil
+    - völlig willkürlich
+    - immer schon vorherbestimmt
+    - alles was wir haben
+    - ein großes Privileg
+    - nicht mehr haltbar
+    - unsere Rettung
+    - eine Katastrophe
+    - der Anfang vom Ende
+    - noch das geringste Übel
+    - nicht grundfalsch
+    - eine Illusion
+    - unterstes Niveau
+    - ein Geschenk Gottes
+    - bedeutungslos
+    - völlig überholt
+    - doch nur relativ
+    - nur die Spitze des Eisbergs
+    - eine große Enttäuschung
+    - erst der Anfang
+    - völlig unabdingbar
+    - echt daneben
+    - eine große Chance
+    - der erste Schritt zur Besserung
+    - das Ziel allen Strebens
+    - eine Frage des richtigen Tons
+    - alles, was uns bleibt
+    - eine Schwäche
+    - schlimmer als der Tod
+    - ein fataler Fehler
+    - besser als Sex
+    - mein Trost und Halt
+    - nichts wert
+  en:
+    - the highest virtue
+    - the basis for living together
+    - a social duty
+    - the root of all evil
+    - what makes life worth living
+    - wrong
+    - deeply human
+    - no trivial offence anymore
+    - totally overrated
+    - totally underrated
+    - always gift and duty together
+    - to be taken with a pinch of salt
+    - disputable
+    - imperiling to one's existence
+    - the key to happiness
+    - a matter of decency
+    - up to you
+    - awesome
+    - totally arbitrary
+    - always predetermined
+    - everything we have
+    - a great privilege
+    - no longer sustainable
+    - our salvation
+    - a catastrophe
+    - the beginning of the end
+    - still the lesser evil
+    - not fundamentally wrong
+    - an illusion
+    - the undermost standard
+    - a godsend
+    - meaningless
+    - completely outdated
+    - yet only relative
+    - only the tip of the iceberg
+    - a great dissapointment
+    - only the beginning
+    - completely indispensable
+    - truly a disgrace
+    - a great opportunity
+    - the first step into betterment
+    - the primary objective
+    - a question of manners
+    - all that is left to us
+    - a weakness
+    - worse than death
+    - a fatal error
+    - better than sex
+    - my great consolation
+    - worth nothing

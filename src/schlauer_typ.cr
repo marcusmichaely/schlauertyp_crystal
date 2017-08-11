@@ -51,15 +51,22 @@ module SchlauerTyp
   {% end %}
 
   get "/" do |context|
-    context.redirect(generator.generate_path)
+    context.redirect(generator.generate_path(MessageGenerator::DEFAULT_LOCALE))
   end
 
-  get "/:start_index/:middle_index/:end_index" do |context|
+  get "/:locale" do |context|
+    locale = context.params.url["locale"]? || MessageGenerator::DEFAULT_LOCALE
+    context.redirect(generator.generate_path(locale))
+  end
+
+  get "/:locale/:start_index/:middle_index/:end_index" do |context|
+    locale = context.params.url["locale"]? || MessageGenerator::DEFAULT_LOCALE
     url_params = context.params.url
     message = generator.get_message(
       url_params["start_index"].to_i,
       url_params["middle_index"].to_i,
-      url_params["end_index"].to_i
+      url_params["end_index"].to_i,
+      locale: locale
     )
 
     io = context.response

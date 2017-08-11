@@ -8,6 +8,7 @@ module SchlauerTyp
   class TelegramBot
     HOST_NAME = ENV["HOST_NAME"]
     BASE_URL = "https://api.telegram.org/bot#{ENV["TELEGRAM_BOT_TOKEN"]}/"
+    COMMAND_REGEX = /#{Regex.escape(ENV["TELEGRAM_BOT_COMMAND"])}($| )/
 
     def initialize(@generator : MessageGenerator)
       setup_webhook(ENV["TELEGRAM_WEBHOOK_TOKEN"])
@@ -29,7 +30,8 @@ module SchlauerTyp
       return false unless message_entities && message_entities.size == 1
       message_entity = message_entities.first
       return false unless message_entity.type == "bot_command" && message_entity.offset == 0
-      return false unless update.message.text == ENV["TELEGRAM_BOT_COMMAND"]
+      text = update.message.text
+      return false unless text && text =~ COMMAND_REGEX
 
       true
     end
@@ -40,8 +42,11 @@ module SchlauerTyp
       return unless body
       update = Telegram::Update.from_json(body)
       return unless bot_command?(update)
+      text = update.message.text || ""
+      locale = text.strip.split(" ")[1]? ||
+        MessageGenerator::DEFAULT_LOCALE
 
-      url = "https://#{HOST_NAME}#{@generator.generate_path}"
+      url = "https://#{HOST_NAME}#{@generator.generate_path(locale)}"
       send_message = Telegram::SendMessage.new(update.message.chat.id, url)
       context.response.headers["Content-Type"] = "application/json"
       send_message.to_json(context.response)
