@@ -36,7 +36,7 @@ module SchlauerTyp
     [File.join(BASE_PATH, file), Resources::CACHE_BUSTER].join("?")
   end
 
-  def self.render_html(message, url, io)
+  def self.render_html(message, url, locale, io)
     ECR.embed "./templates/message.html.ecr", io
   end
 
@@ -82,7 +82,7 @@ module SchlauerTyp
       render_xml(message, io)
     else
       url = "http://#{context.request.host_with_port}#{context.request.path}"
-      render_html(message, url, io)
+      render_html(message, url, locale, io)
     end
 
     nil
