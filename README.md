@@ -17,18 +17,25 @@ are embedded in the binary during compile time for super-fast response times.
 
 ## Usage
 
-`bin/schlauer_typ [<host>:<port>]`
+    bin/schlauer_typ [options]
+
+    -b HOST, --bind HOST             Host to bind (defaults to 0.0.0.0)
+    -p PORT, --port PORT             Port to listen for connections (defaults to 3000)
+    -s, --ssl                        Enables SSL
+    --ssl-key-file FILE              SSL key file
+    --ssl-cert-file FILE             SSL certificate file
+    -h, --help                       Shows this help
 
 ## Benchmarks
 
 Because why would you just have to take my word for it?
 
-        Content-Type  Req/s  Avg Res T  Variance        Ranking
+        Content-Type   Req/s  Avg Res T  Variance       Ranking
     ===========================================================
-          text/plain  18.69k (  53.5µs) (±38.12%)       fastest
-    application/json  15.44k ( 64.78µs) (±35.98%)  1.21× slower
-     application/xml  15.03k ( 66.53µs) (±19.10%)  1.24× slower
-           text/html  12.71k (  78.7µs) (±11.31%)  1.47× slower
+          text/plain   7.32k (136.55µs) (± 8.23%)       fastest
+    application/json   7.24k (138.09µs) (± 7.32%)  1.01× slower
+     application/xml    7.1k (140.94µs) (± 8.49%)  1.03× slower
+           text/html   6.82k (146.55µs) (±10.31%)  1.07× slower
 
 The benchmark was run on a Thinkpad X220 with an Intel Core i7 CPU with 4
 hyperthreads and TurboBoost^tm disabled.
