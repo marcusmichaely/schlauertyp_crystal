@@ -8,7 +8,8 @@ module SchlauerTyp
   class TelegramBot
     HOST_NAME = ENV["HOST_NAME"]
     BASE_URL = "https://api.telegram.org/bot#{ENV["TELEGRAM_BOT_TOKEN"]}/"
-    COMMAND_REGEX = /#{Regex.escape(ENV["TELEGRAM_BOT_COMMAND"])}($| )/
+    COMMAND_REGEX =
+      /(?<command>#{Regex.escape(ENV["TELEGRAM_BOT_COMMAND"])})(?:$| |(?<nick>@\w+))/
 
     def initialize(@generator : MessageGenerator)
       setup_webhook(ENV["TELEGRAM_WEBHOOK_TOKEN"])
@@ -31,7 +32,10 @@ module SchlauerTyp
       message_entity = message_entities.first
       return false unless message_entity.type == "bot_command" && message_entity.offset == 0
       text = update.message.text
-      return false unless text && text =~ COMMAND_REGEX
+      return false unless text
+      match = text.match(COMMAND_REGEX)
+      return false unless match
+      return false unless [nil, "@#{ENV["TELEGRAM_BOT_NICK"]}"].includes?(match["nick"]?)
 
       true
     end
