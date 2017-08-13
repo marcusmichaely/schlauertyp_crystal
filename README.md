@@ -1,6 +1,6 @@
 ![logo](resources/logo.png)
 
-This is a fork from [marcusmichaely/schlauertyp](https://github.com/marcusmichaely/schlauertyp)
+This is a copy from [jreinert/schlauertyp](https://github.com/jreinert/schlauertyp)
 
 Unlike the original ruby implementation this version is written in crystal and
 as such compiles into a binary.  This version acts as a server backend capable
